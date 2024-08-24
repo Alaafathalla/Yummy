@@ -7,10 +7,11 @@ import './App.css';
 
 
 let routers=createBrowserRouter([{
-  path :"/",element :"<Layout/>", children:[
+  path :"/",element :"<Card/>", children:[
     { index :true , element :"<Home/>"},
     { path :"home" , element :"<Home/>"},
     { path :"about" , element :"<About/>"},
+    { path :"card" , element :"<Card/>"},
   ]
  }]);
 
