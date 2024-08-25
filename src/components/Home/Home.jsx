@@ -8,7 +8,7 @@ function Home() {
 
   async function getData() {
     try {
-      let response = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata'); 
+      let response = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?s='); 
       setMeals(response.data.meals); 
     } catch (error) {
       console.error("Error fetching the data", error);
