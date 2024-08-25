@@ -7,8 +7,12 @@ function Home() {
   const [meals, setMeals] = useState([]); 
 
   async function getData() {
-    let data = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?s='); 
-    setMeals(data.data.meals); 
+    try {
+      let response = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata'); 
+      setMeals(response.data.meals); 
+    } catch (error) {
+      console.error("Error fetching the data", error);
+    }
   }
 
   useEffect(() => { 
@@ -17,7 +21,7 @@ function Home() {
 
   return (
     <>
-      {meals.map((mealInfo, index) => (
+      { meals.map((mealInfo, index) => (
         <Card meal={mealInfo} key={index}/> 
       ))}
     </>
@@ -25,5 +29,6 @@ function Home() {
 }
 
 export default Home;
+
 
 
