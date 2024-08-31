@@ -1,10 +1,11 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from '../src/components/Home/Home.jsx';
 import Card from '../src/components/Card/Card.jsx';
-import Layout from '../src/components/Layout/Layout.jsx';  
-import About from '../src/components/About/About.jsx';  
+import Layout from '../src/components/Layout/Layout.jsx'; 
+import SideBar from '../src/components/Sidebar/Sidebar.jsx' 
 
 import './App.css';
+import Details from './components/Details/Details.jsx';
 
 let routers = createBrowserRouter([
   {
@@ -13,8 +14,9 @@ let routers = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },  
       { path: "home", element: <Home /> },
-      { path: "about", element: <About /> },  
+      { path: ":/id", element: <Details /> },  
       { path: "card", element: <Card /> },
+      { path: "sidebar", element: <SideBar /> },
     ],
   },
 ]);
