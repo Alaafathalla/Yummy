@@ -3,11 +3,9 @@ import { NavLink } from 'react-router-dom';
 import style from '../Sidebar/sideBar.module.css';
 
 export default function SidebarNav() {
-  // Define the sidebarIcon reference
   const sidebarIcon = useRef(null);
 
   const changeStatus = () => {
-    // Example: toggle a class on the icon or perform other actions
     if (sidebarIcon.current) {
       sidebarIcon.current.classList.toggle('active');
     }
