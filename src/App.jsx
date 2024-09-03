@@ -4,9 +4,10 @@ import Card from '../src/components/Card/Card.jsx';
 import Layout from '../src/components/Layout/Layout.jsx'; 
 import SideBar from '../src/components/Sidebar/Sidebar.jsx';
 import Search from '../src/components/Search/Search.jsx';
+import Details from './components/Details/Details.jsx';
+import Categories from './components/Categories/Categories.jsx';
 
 import './App.css';
-import Details from './components/Details/Details.jsx';
 
 let routers = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ let routers = createBrowserRouter([
       { path: "card", element: <Card /> },
       { path: "sidebar", element: <SideBar /> },
       { path: "search", element: <Search /> },
+      { path: "categories", element: <Categories /> },
     ],
   },
 ]);
