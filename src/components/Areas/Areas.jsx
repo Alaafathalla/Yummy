@@ -8,7 +8,7 @@ export default function
         <h2>SEARCH BY AREA </h2>
        </div>
       <div>
-        <div className="row mx-2">
+        <div className="row mx-5">
         <div className="col-4">
             <div className={` text-center color-info ${style.Area}  p-3 rounded-2 `}>
             <i className="fa-solid fa-house d-block"></i>

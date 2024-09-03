@@ -1,0 +1,24 @@
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Example hover effect */
+  }
+  
+  .layer {
+    background-color: rgba(103, 93, 93, 0.5); /* Example overlay */
+    color: white; /* Text color */
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card:hover .layer {
+    opacity: 1;
+  }

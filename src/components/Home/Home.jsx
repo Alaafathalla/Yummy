@@ -23,7 +23,7 @@ function Home() {
   return (
     <>
       {meals.length ? (
-        <div className="row g-3">
+        <div className="row g-3 m-5 ">
           {meals.map((mealInfo, index) => (
             <Card meal={mealInfo} key={index} />
           ))}

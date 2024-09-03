@@ -6,7 +6,8 @@ import SideBar from '../src/components/Sidebar/Sidebar.jsx';
 import Search from '../src/components/Search/Search.jsx';
 import Details from './components/Details/Details.jsx';
 import Categories from './components/Categories/Categories.jsx';
-import Areas from  './components/Areas/Areas.jsx'
+import Areas from  './components/Areas/Areas.jsx';
+import Ingredients from './components/Ingredients/Ingredients.jsx';
 
 import './App.css';
 
@@ -23,7 +24,9 @@ let routers = createBrowserRouter([
       { path: "search", element: <Search /> },
       { path: "categories", element: <Categories /> },
       { path: "areas", element: <Areas /> },
+      { path: "ingredients", element: <Ingredients /> },
     ],
+
   },
 ]);
 
