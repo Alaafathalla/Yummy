@@ -1,0 +1,9 @@
+.Area {
+    color: rgb(43, 102, 170);
+    background-color: #e9ecef;
+
+}
+.Area:hover {
+    color: rgb(30, 70, 115);
+
+}

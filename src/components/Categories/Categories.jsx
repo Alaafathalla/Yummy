@@ -1,6 +1,6 @@
 import React from 'react';
 import img from '../../assets/download (5).jpeg';
-
+import style from '../Categories/categories.module.css';
 export default function Categories() {
   return (
     <div>
@@ -11,7 +11,7 @@ export default function Categories() {
       <div className="container">
         <div className="row">
           <div className="col-3">
-            <div className='card position-relative text-black cursor-pointer rounded-2 overflow-hidden'>
+          <div className={`${style.card} position-relative text-black cursor-pointer rounded-2 overflow-hidden`}>
             <img src={img} alt="Category" className='w-100'  />
           </div>
           <div className={`position-absolute top-100  start-0 w-100 h-100 d-flex p-3 align-items-center`} >
@@ -19,7 +19,7 @@ export default function Categories() {
             </div>
           </div>
           <div className="col-3">
-            <div className='card position-relative text-black cursor-pointer rounded-2 overflow-hidden'>
+          <div className={`${style.card} position-relative text-black cursor-pointer rounded-2 overflow-hidden`}>
             <img src={img} alt="Category" className='w-100'  />
           </div>
           <div className={`position-absolute top-100  start-0 w-100 h-100 d-flex p-3 align-items-center`} >
@@ -27,7 +27,7 @@ export default function Categories() {
             </div>
           </div>
           <div className="col-3">
-            <div className='card position-relative text-black cursor-pointer rounded-2 overflow-hidden'>
+          <div className={`${style.card} position-relative text-black cursor-pointer rounded-2 overflow-hidden`}>
             <img src={img} alt="Category" className='w-100'  />
           </div>
           <div className={`position-absolute top-100  start-0 w-100 h-100 d-flex p-3 align-items-center`} >
@@ -35,13 +35,15 @@ export default function Categories() {
             </div>
           </div>
           <div className="col-3">
-            <div className='card position-relative text-black cursor-pointer rounded-2 overflow-hidden'>
+          <div className={`${style.card} position-relative text-black cursor-pointer rounded-2 overflow-hidden`}>
             <img src={img} alt="Category" className='w-100'  />
           </div>
           <div className={`position-absolute top-100  start-0 w-100 h-100 d-flex p-3 align-items-center`} >
               <h2 className='fw-bold'>meal</h2>
             </div>
           </div>
+
+
         </div>
       </div>
     </div>

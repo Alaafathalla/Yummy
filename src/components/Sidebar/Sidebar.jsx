@@ -27,7 +27,7 @@ export default function SidebarNav() {
           <NavLink className={`nav-link text-white ${style.link}`} to="/ingredients">Ingredients</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className={`nav-link text-white ${style.link}`} to="/area">Area</NavLink>
+          <NavLink className={`nav-link text-white ${style.link}`} to="/areas">Areas</NavLink>
         </li>
         <li className="nav-item">
           <NavLink className={`nav-link text-white ${style.link}`} to="/contact">Contact Us</NavLink>
