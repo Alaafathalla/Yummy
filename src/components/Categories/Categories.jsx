@@ -9,42 +9,16 @@ export default function Categories() {
       </div> 
       
       <div className="container">
-        <div className="row">
-          <div className="col-3">
-          <div className={`${style.card} position-relative text-black cursor-pointer rounded-2 overflow-hidden`}>
-            <img src={img} alt="Category" className='w-100'  />
+      <div className="row mx-5">
+        <div className="col-3">
+        <div className={`${style.card} position-relative text-black cursor-pointer rounded-2 overflow-hidden`}>
+          <img className='w-100' src={img}  />
+          <div className={`${style.layer} position-absolute start-0 top-0 w-100 h-100 d-flex p-3 align-items-center justify-content-center`}>
+            <h2 className='fw-bold text-white'>hhio</h2>
           </div>
-          <div className={`position-absolute top-100  start-0 w-100 h-100 d-flex p-3 align-items-center`} >
-              <h2 className='fw-bold'>meal</h2>
-            </div>
-          </div>
-          <div className="col-3">
-          <div className={`${style.card} position-relative text-black cursor-pointer rounded-2 overflow-hidden`}>
-            <img src={img} alt="Category" className='w-100'  />
-          </div>
-          <div className={`position-absolute top-100  start-0 w-100 h-100 d-flex p-3 align-items-center`} >
-              <h2 className='fw-bold'>meal</h2>
-            </div>
-          </div>
-          <div className="col-3">
-          <div className={`${style.card} position-relative text-black cursor-pointer rounded-2 overflow-hidden`}>
-            <img src={img} alt="Category" className='w-100'  />
-          </div>
-          <div className={`position-absolute top-100  start-0 w-100 h-100 d-flex p-3 align-items-center`} >
-              <h2 className='fw-bold'>meal</h2>
-            </div>
-          </div>
-          <div className="col-3">
-          <div className={`${style.card} position-relative text-black cursor-pointer rounded-2 overflow-hidden`}>
-            <img src={img} alt="Category" className='w-100'  />
-          </div>
-          <div className={`position-absolute top-100  start-0 w-100 h-100 d-flex p-3 align-items-center`} >
-              <h2 className='fw-bold'>meal</h2>
-            </div>
-          </div>
-
-
         </div>
+        </div>
+    </div>
       </div>
     </div>
   );
