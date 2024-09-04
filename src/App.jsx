@@ -8,6 +8,7 @@ import Details from './components/Details/Details.jsx';
 import Categories from './components/Categories/Categories.jsx';
 import Areas from  './components/Areas/Areas.jsx';
 import Ingredients from './components/Ingredients/Ingredients.jsx';
+import Contact from './components/Contact/Contact.jsx';
 
 import './App.css';
 
@@ -25,6 +26,7 @@ let routers = createBrowserRouter([
       { path: "categories", element: <Categories /> },
       { path: "areas", element: <Areas /> },
       { path: "ingredients", element: <Ingredients /> },
+      { path: "contact", element: <Contact /> },
     ],
 
   },
