@@ -4,7 +4,7 @@ import Card from '../src/components/Card/Card.jsx';
 import Layout from '../src/components/Layout/Layout.jsx'; 
 import SideBar from '../src/components/Sidebar/Sidebar.jsx';
 import Search from '../src/components/Search/Search.jsx';
-import Details from './components/Details/Details.jsx';
+import Details from '../src/components/Details/Details.jsx';
 import Categories from './components/Categories/Categories.jsx';
 import Areas from  './components/Areas/Areas.jsx';
 import Ingredients from './components/Ingredients/Ingredients.jsx';
@@ -19,7 +19,7 @@ let routers = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },  
       { path: "home", element: <Home /> },
-      { path: ":/id", element: <Details /> },  
+      { path: "/:id", element: <Details /> },  
       { path: "card", element: <Card /> },
       { path: "sidebar", element: <SideBar /> },
       { path: "search", element: <Search /> },

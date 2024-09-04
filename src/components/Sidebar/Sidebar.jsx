@@ -37,7 +37,7 @@ function openSidebar() {
               <NavLink onClick={()=>closeSidebar()} className='nav-link  my-3 p-1' to="/home">Home</NavLink >
             </li>
             <li >
-              <NavLink onClick={()=>closeSidebar()} className='nav-link  my-3 p-1' to="/category">Categories</NavLink >
+              <NavLink onClick={()=>closeSidebar()} className='nav-link  my-3 p-1' to="/categories">Categories</NavLink >
             </li>
             <li >
               <NavLink onClick={()=>closeSidebar()} className='nav-link  my-3 p-1' to="/search">Search</NavLink>
