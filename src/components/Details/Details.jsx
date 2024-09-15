@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-
+import Card from '../Card/Card.jsx';
 export default function MealDetails() {
   let { id } = useParams();
   const [details, setDetails] = useState({});
@@ -24,6 +24,8 @@ export default function MealDetails() {
       <div className="col-md-6 p-5">
         <div className='p-5'>
           <img className="w-100 rounded-3" src={details.strMealThumb} alt={details.strMeal} />
+          <a className="btn btn-warning fs-4 m-1 mt-3 align-content-center" href={Card} target="_blank" rel="noreferrer">back to home</a>
+
         </div>
       </div>
       <div className="col-md-6 p-5">
