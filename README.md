@@ -1,8 +1,43 @@
-# React + Vite
+# Yummy | Meal Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A meal-browsing interface with search, categories, areas, ingredients and meal-detail routes.
 
-Currently, two official plugins are available:
+## Included interfaces
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Meal search and detail routes.
+- Category, area and ingredient browsing routes.
+- Shared layout, sidebar and contact interface.
+
+## Built with
+
+React, Vite, React Router, Axios and Bootstrap.
+
+## Run locally
+
+Install a Node.js version supported by the framework dependencies in `package.json`.
+
+```bash
+npm install
+npm run dev
+```
+
+Open the local URL printed by the development server.
+
+## Production build
+
+```bash
+npm run build
+```
+
+## Project structure
+
+- `public/`
+- `src/`
+
+## Other scripts
+
+- `npm run lint`
+
+## Deployment
+
+No live deployment has been verified for this repository.
